@@ -15,6 +15,21 @@ a {
   text-decoration: none;
 }
 
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f6f6f6;
+}
+
 /* outline */
 div,
 header,
@@ -29,7 +44,6 @@ li {
 .wrap {
   width: 100%;
   height: 6500px;
-  background-color: #f6f6f6;
 }
 
 /* inner */
@@ -41,12 +55,121 @@ li {
 /* header */
 .header {
   display: flex;
-  gap: 70px;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 70px; */
+  height: 53px;
 }
 
 .header .logo {
 }
 
+.header img {
+  width: 123px;
+  object-fit: contain;
+}
+
+/* nav */
+.nav > ul {
+  display: flex;
+  gap: 50px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* mypage */
+.mypage {
+  display: flex;
+  gap: 50px;
+}
+.mypage > a {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.mypage > a > img {
+  width: 100%;
+  height: 100%;
+}
+
 /* container */
+/* slide */
+.slide {
+  background-color: #fff;
+}
+.slide > .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.slide .arrow {
+  width: 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.slide .arrow button {
+  cursor: pointer;
+  width: 100%;
+  height: 24px;
+}
+.slide .arrow .left_chevron {
+  background-image: url(../img/left_chevron_3.svg);
+  background-repeat: no-repeat;
+}
+.slide .arrow .right_chevron {
+  background-image: url(../img/right_chevron_3.svg);
+  background-repeat: no-repeat;
+}
+
+.slide .slide_contents {
+  font-size: 14px;
+}
+
+/* main_banner */
+/* top */
+.main_banner_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 258px;
+}
+.banner_title {
+  font-size: 48px;
+  font-weight: 700;
+}
+.banner_title p:first-child {
+  color: #215000;
+}
+.banner_title p:nth-child(2) {
+  color: #b5c500;
+}
+
+.help > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 10px;
+  width: 254px;
+  height: 74px;
+  font-size: 14px;
+}
+.help .pic {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.help .speacialist > .pic {
+  background-image: url(../img/speacialist.png);
+  background-size: cover;
+}
+.help .visit_store > .pic {
+  background-image: url(../img/logo_visit.png);
+  background-size: cover;
+}
+/* bottom */
 
 /* footer */
