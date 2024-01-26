@@ -15,9 +15,37 @@ a {
   text-decoration: none;
 }
 
+/* outline */
+div,
+header,
+footer,
+p,
+ul,
+li {
+  outline: 1px dotted red;
+}
+
 /* wrap */
+.wrap {
+  width: 100%;
+  height: 6500px;
+  background-color: #f6f6f6;
+}
+
+/* inner */
+.inner {
+  width: 1280px;
+  margin: 0 auto;
+}
 
 /* header */
+.header {
+  display: flex;
+  gap: 70px;
+}
+
+.header .logo {
+}
 
 /* container */
 
